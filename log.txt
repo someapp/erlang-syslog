@@ -1,0 +1,375 @@
+DEBUG: Rebar location: "/opt/erlang_syslog/erlang-syslog/rebar"
+DEBUG: Entering /opt/erlang_syslog/erlang-syslog
+DEBUG: Available deps: []
+DEBUG: Missing deps  : []
+DEBUG: Predirs: []
+WARN:  'pre_compile' command does not apply to directory /opt/erlang_syslog/erlang-syslog
+==> erlang-syslog (compile)
+DEBUG: Matched required ERTS version: 5.9.3.1 -> .*
+DEBUG: Matched required OTP release: R15B03 -> .*
+DEBUG: erl_opts [debug_info]
+DEBUG: Starting 3 compile worker(s)
+INFO:  Skipped src/syslog_app.erl
+INFO:  Skipped src/syslog_sup.erl
+DEBUG: Worker exited cleanly
+DEBUG: Worker exited cleanly
+INFO:  Skipped src/syslog.erl
+DEBUG: Worker exited cleanly
+INFO:  Skipping c_src/syslog_drv.c
+INFO:  Using specs [{"priv/syslog_drv.so",["c_src/syslog_drv.o"]}]
+INFO:  sh info:
+	cwd: "/opt/erlang_syslog/erlang-syslog"
+	cmd: cc c_src/syslog_drv.o /usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o priv/syslog_drv.so
+	opts: [{env,[{"BINDIR","/usr/local/lib/erlang/erts-5.9.3.1/bin"},
+                     {"CC","cc"},
+                     {"CC_TEMPLATE",
+                      "cc -c -I/usr/lib64/erlang/lib/erl_interface-3.5.9/include -I/usr/lib64/erlang/erts-5.6.5/include -g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include  $PORT_IN_FILES -o $PORT_OUT_FILE"},
+                     {"CFLAGS",
+                      "-I/usr/lib64/erlang/lib/erl_interface-3.5.9/include -I/usr/lib64/erlang/erts-5.6.5/include"},
+                     {"COLORTERM","gnome-terminal"},
+                     {"CVS_RSH","ssh"},
+                     {"CXX","c++"},
+                     {"CXX_TEMPLATE",
+                      "c++ -c $CXXFLAGS -g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include  $PORT_IN_FILES -o $PORT_OUT_FILE"},
+                     {"DBUS_SESSION_BUS_ADDRESS",
+                      "unix:abstract=/tmp/dbus-0u7cW6VbFH,guid=a65491e0f8c8c224932ffc00519a7176"},
+                     {"DESKTOP_SESSION","default"},
+                     {"DESKTOP_STARTUP_ID",[]},
+                     {"DISPLAY",":0.0"},
+                     {"DRV_CFLAGS",
+                      "-g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include "},
+                     {"DRV_LDFLAGS",
+                      "-shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei"},
+                     {"EMU","beam"},
+                     {"ERLANG_ARCH","64"},
+                     {"ERLANG_HOME","/usr/lib64/erlang"},
+                     {"ERLANG_LIB","/usr/lib64/erlang/lib"},
+                     {"ERLANG_TARGET","R15B03-x86_64-unknown-linux-gnu-64"},
+                     {"ERLANG_VER","erlangR15B03"},
+                     {"ERL_CFLAGS",
+                      " -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include "},
+                     {"ERL_EI_LIBDIR",
+                      "/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib"},
+                     {"ERL_INTERFACE_DIR",
+                      "/usr/lib64/erlang/lib/erl_interface-3.5.9"},
+                     {"ERL_LDFLAGS",
+                      " -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei"},
+                     {"ERTS_HOME","/usr/lib64/erlang/erts-5.6.5"},
+                     {"ERTS_INCLUDE","/usr/lib64/erlang/erts-5.6.5/include"},
+                     {"ERTS_LIB","/usr/lib64/erlang/erts-5.6.5/lib"},
+                     {"GDMSESSION","default"},
+                     {"GDM_XSERVER_LOCATION","local"},
+                     {"GEM_HOME","/usr/local/rvm/gems/ruby-2.0.0-p0"},
+                     {"GEM_PATH",
+                      "/usr/local/rvm/gems/ruby-2.0.0-p0:/usr/local/rvm/gems/ruby-2.0.0-p0@global"},
+                     {"GNOME_DESKTOP_SESSION_ID","Default"},
+                     {"GNOME_KEYRING_SOCKET","/tmp/keyring-O4Wwqd/socket"},
+                     {"GTK_RC_FILES","/etc/gtk/gtkrc:/root/.gtkrc-1.2-gnome2"},
+                     {"G_BROKEN_FILENAMES","1"},
+                     {"HISTSIZE","1000"},
+                     {"HOME","/root"},
+                     {"HOSTNAME","talkserver"},
+                     {"IDEA_HOME","/opt/idea-IC-129.239"},
+                     {"INPUTRC","/etc/inputrc"},
+                     {"IRBRC","/usr/local/rvm/rubies/ruby-2.0.0-p0/.irbrc"},
+                     {"JAVA_HOME","/usr/java/jdk1.7.0_21"},
+                     {"JDK_HOME","/usr/java/jdk1.7.0_21/lib"},
+                     {"LANG","en_US.UTF-8"},
+                     {"LDFLAGS",
+                      "/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei"},
+                     {"LESSOPEN","|/usr/bin/lesspipe.sh %s"},
+                     {"LINK_TEMPLATE",
+                      "cc $PORT_IN_FILES /usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o $PORT_OUT_FILE"},
+                     {"LOGNAME","root"},
+                     {"LS_COLORS",
+                      "no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:"},
+                     {"MAIL","/var/spool/mail/root"},
+                     {"MY_RUBY_HOME","/usr/local/rvm/rubies/ruby-2.0.0-p0"},
+                     {"PATH",
+                      "/usr/local/lib/erlang/erts-5.9.3.1/bin:/usr/local/lib/erlang/bin:/usr/local/rvm/gems/ruby-2.0.0-p0/bin:/usr/local/rvm/gems/ruby-2.0.0-p0@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p0/bin:/usr/local/rvm/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/opt/erlangR15B03/lib/erlang/bin:/opt/idea-IC-129.239/bin:/usr/java/jdk1.7.0_21/bin:/root/bin:/opt/erlangR15B03/lib/erlang/bin:/opt/idea-IC-129.239/bin:/usr/java/jdk1.7.0_21/bin"},
+                     {"PROGNAME","erl"},
+                     {"PWD","/opt/erlang_syslog/erlang-syslog"},
+                     {"QTDIR","/usr/lib64/qt-3.3"},
+                     {"QTINC","/usr/lib64/qt-3.3/include"},
+                     {"QTLIB","/usr/lib64/qt-3.3/lib"},
+                     {"ROOTDIR","/usr/local/lib/erlang"},
+                     {"RUBY_VERSION","ruby-2.0.0-p0"},
+                     {"SESSION_MANAGER",
+                      "local/talkserver:/tmp/.ICE-unix/2875"},
+                     {"SHELL","/bin/bash"},
+                     {"SHLVL","2"},
+                     {"SSH_AGENT_PID","2955"},
+                     {"SSH_ASKPASS","/usr/libexec/openssh/gnome-ssh-askpass"},
+                     {"SSH_AUTH_SOCK","/tmp/ssh-yBgAYu2875/agent.2875"},
+                     {"TERM","xterm"},
+                     {"USER","root"},
+                     {"WINDOWID","29699106"},
+                     {"XAUTHORITY","/tmp/.gdm6WDBXW"},
+                     {"XMODIFIERS","@im=none"},
+                     {"__array_start","0"},
+                     {"_first","0"},
+                     {"_second","1"},
+                     {"escape_flag","1"},
+                     {"rvm_bin_path","/usr/local/rvm/bin"},
+                     {"rvm_debug_clr","\e[35m"},
+                     {"rvm_error_clr","\e[31m"},
+                     {"rvm_notify_clr","\e[32m"},
+                     {"rvm_path","/usr/local/rvm"},
+                     {"rvm_prefix","/usr/local"},
+                     {"rvm_reset_clr","\e(B\e[m"},
+                     {"rvm_version","1.19.6 (stable)"},
+                     {"rvm_warn_clr","\e[33m"}]}]
+/usr/lib64/erlang/lib/erl_interface-3.5.9/lib: file not recognized: Is a directory
+collect2: ld returned 1 exit status
+ERROR: cc c_src/syslog_drv.o /usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o priv/syslog_drv.so failed with error: 1
+DEBUG: Rebar location: "/opt/erlang_syslog/erlang-syslog/rebar"
+DEBUG: Entering /opt/erlang_syslog/erlang-syslog
+DEBUG: Available deps: []
+DEBUG: Missing deps  : []
+DEBUG: Predirs: []
+WARN:  'pre_compile' command does not apply to directory /opt/erlang_syslog/erlang-syslog
+==> erlang-syslog (compile)
+DEBUG: Matched required ERTS version: 5.9.3.1 -> .*
+DEBUG: Matched required OTP release: R15B03 -> .*
+DEBUG: erl_opts [debug_info]
+DEBUG: Starting 3 compile worker(s)
+INFO:  Skipped src/syslog_app.erl
+INFO:  Skipped src/syslog_sup.erl
+DEBUG: Worker exited cleanly
+DEBUG: Worker exited cleanly
+INFO:  Skipped src/syslog.erl
+DEBUG: Worker exited cleanly
+INFO:  Skipping c_src/syslog_drv.c
+INFO:  Using specs [{"priv/syslog_drv.so",["c_src/syslog_drv.o"]}]
+INFO:  sh info:
+	cwd: "/opt/erlang_syslog/erlang-syslog"
+	cmd: cc c_src/syslog_drv.o -L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_inter
+face -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o priv/syslog_drv.so
+	opts: [{env,[{"BINDIR","/usr/local/lib/erlang/erts-5.9.3.1/bin"},
+                     {"CC","cc"},
+                     {"CC_TEMPLATE",
+                      "cc -c -I/usr/lib64/erlang/lib/erl_interface-3.5.9/include -I/usr/lib64/erlang/erts-5.6.5/include -g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include  $PORT_IN_FILES -o $PORT_OUT_FILE"},
+                     {"CFLAGS",
+                      "-I/usr/lib64/erlang/lib/erl_interface-3.5.9/include -I/usr/lib64/erlang/erts-5.6.5/include"},
+                     {"COLORTERM","gnome-terminal"},
+                     {"CVS_RSH","ssh"},
+                     {"CXX","c++"},
+                     {"CXX_TEMPLATE",
+                      "c++ -c $CXXFLAGS -g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include  $PORT_IN_FILES -o $PORT_OUT_FILE"},
+                     {"DBUS_SESSION_BUS_ADDRESS",
+                      "unix:abstract=/tmp/dbus-0u7cW6VbFH,guid=a65491e0f8c8c224932ffc00519a7176"},
+                     {"DESKTOP_SESSION","default"},
+                     {"DESKTOP_STARTUP_ID",[]},
+                     {"DISPLAY",":0.0"},
+                     {"DRV_CFLAGS",
+                      "-g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include "},
+                     {"DRV_LDFLAGS",
+                      "-shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei"},
+                     {"EMU","beam"},
+                     {"ERLANG_ARCH","64"},
+                     {"ERLANG_HOME","/usr/lib64/erlang"},
+                     {"ERLANG_LIB","/usr/lib64/erlang/lib"},
+                     {"ERLANG_TARGET","R15B03-x86_64-unknown-linux-gnu-64"},
+                     {"ERLANG_VER","erlangR15B03"},
+                     {"ERL_CFLAGS",
+                      " -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include "},
+                     {"ERL_EI_LIBDIR",
+                      "/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib"},
+                     {"ERL_INTERFACE_DIR",
+                      "/usr/lib64/erlang/lib/erl_interface-3.5.9"},
+                     {"ERL_LDFLAGS",
+                      " -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei"},
+                     {"ERTS_HOME","/usr/lib64/erlang/erts-5.6.5"},
+                     {"ERTS_INCLUDE","/usr/lib64/erlang/erts-5.6.5/include"},
+                     {"ERTS_LIB","/usr/lib64/erlang/erts-5.6.5/lib"},
+                     {"GDMSESSION","default"},
+                     {"GDM_XSERVER_LOCATION","local"},
+                     {"GEM_HOME","/usr/local/rvm/gems/ruby-2.0.0-p0"},
+                     {"GEM_PATH",
+                      "/usr/local/rvm/gems/ruby-2.0.0-p0:/usr/local/rvm/gems/ruby-2.0.0-p0@global"},
+                     {"GNOME_DESKTOP_SESSION_ID","Default"},
+                     {"GNOME_KEYRING_SOCKET","/tmp/keyring-O4Wwqd/socket"},
+                     {"GTK_RC_FILES","/etc/gtk/gtkrc:/root/.gtkrc-1.2-gnome2"},
+                     {"G_BROKEN_FILENAMES","1"},
+                     {"HISTSIZE","1000"},
+                     {"HOME","/root"},
+                     {"HOSTNAME","talkserver"},
+                     {"IDEA_HOME","/opt/idea-IC-129.239"},
+                     {"INPUTRC","/etc/inputrc"},
+                     {"IRBRC","/usr/local/rvm/rubies/ruby-2.0.0-p0/.irbrc"},
+                     {"JAVA_HOME","/usr/java/jdk1.7.0_21"},
+                     {"JDK_HOME","/usr/java/jdk1.7.0_21/lib"},
+                     {"LANG","en_US.UTF-8"},
+                     {"LDFLAGS",
+                      "-L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_inter\nface -lei"},
+                     {"LESSOPEN","|/usr/bin/lesspipe.sh %s"},
+                     {"LINK_TEMPLATE",
+                      "cc $PORT_IN_FILES -L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_inter\nface -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o $PORT_OUT_FILE"},
+                     {"LOGNAME","root"},
+                     {"LS_COLORS",
+                      "no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:"},
+                     {"MAIL","/var/spool/mail/root"},
+                     {"MY_RUBY_HOME","/usr/local/rvm/rubies/ruby-2.0.0-p0"},
+                     {"PATH",
+                      "/usr/local/lib/erlang/erts-5.9.3.1/bin:/usr/local/lib/erlang/bin:/usr/local/rvm/gems/ruby-2.0.0-p0/bin:/usr/local/rvm/gems/ruby-2.0.0-p0@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p0/bin:/usr/local/rvm/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/opt/erlangR15B03/lib/erlang/bin:/opt/idea-IC-129.239/bin:/usr/java/jdk1.7.0_21/bin:/root/bin:/opt/erlangR15B03/lib/erlang/bin:/opt/idea-IC-129.239/bin:/usr/java/jdk1.7.0_21/bin"},
+                     {"PROGNAME","erl"},
+                     {"PWD","/opt/erlang_syslog/erlang-syslog"},
+                     {"QTDIR","/usr/lib64/qt-3.3"},
+                     {"QTINC","/usr/lib64/qt-3.3/include"},
+                     {"QTLIB","/usr/lib64/qt-3.3/lib"},
+                     {"ROOTDIR","/usr/local/lib/erlang"},
+                     {"RUBY_VERSION","ruby-2.0.0-p0"},
+                     {"SESSION_MANAGER",
+                      "local/talkserver:/tmp/.ICE-unix/2875"},
+                     {"SHELL","/bin/bash"},
+                     {"SHLVL","2"},
+                     {"SSH_AGENT_PID","2955"},
+                     {"SSH_ASKPASS","/usr/libexec/openssh/gnome-ssh-askpass"},
+                     {"SSH_AUTH_SOCK","/tmp/ssh-yBgAYu2875/agent.2875"},
+                     {"TERM","xterm"},
+                     {"USER","root"},
+                     {"WINDOWID","29699106"},
+                     {"XAUTHORITY","/tmp/.gdm6WDBXW"},
+                     {"XMODIFIERS","@im=none"},
+                     {"__array_start","0"},
+                     {"_first","0"},
+                     {"_second","1"},
+                     {"escape_flag","1"},
+                     {"rvm_bin_path","/usr/local/rvm/bin"},
+                     {"rvm_debug_clr","\e[35m"},
+                     {"rvm_error_clr","\e[31m"},
+                     {"rvm_notify_clr","\e[32m"},
+                     {"rvm_path","/usr/local/rvm"},
+                     {"rvm_prefix","/usr/local"},
+                     {"rvm_reset_clr","\e(B\e[m"},
+                     {"rvm_version","1.19.6 (stable)"},
+                     {"rvm_warn_clr","\e[33m"}]}]
+/usr/bin/ld: cannot find -lerl_inter
+collect2: ld returned 1 exit status
+ERROR: cc c_src/syslog_drv.o -L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_inter
+face -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o priv/syslog_drv.so failed with error: 1
+DEBUG: Rebar location: "/opt/erlang_syslog/erlang-syslog/rebar"
+DEBUG: Entering /opt/erlang_syslog/erlang-syslog
+DEBUG: Available deps: []
+DEBUG: Missing deps  : []
+DEBUG: Predirs: []
+WARN:  'pre_compile' command does not apply to directory /opt/erlang_syslog/erlang-syslog
+==> erlang-syslog (compile)
+DEBUG: Matched required ERTS version: 5.9.3.1 -> .*
+DEBUG: Matched required OTP release: R15B03 -> .*
+DEBUG: erl_opts [debug_info]
+DEBUG: Starting 3 compile worker(s)
+INFO:  Skipped src/syslog_app.erl
+INFO:  Skipped src/syslog_sup.erl
+DEBUG: Worker exited cleanly
+DEBUG: Worker exited cleanly
+INFO:  Skipped src/syslog.erl
+DEBUG: Worker exited cleanly
+INFO:  Skipping c_src/syslog_drv.c
+INFO:  Using specs [{"priv/syslog_drv.so",["c_src/syslog_drv.o"]}]
+INFO:  sh info:
+	cwd: "/opt/erlang_syslog/erlang-syslog"
+	cmd: cc c_src/syslog_drv.o -L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o priv/syslog_drv.so
+	opts: [{env,[{"BINDIR","/usr/local/lib/erlang/erts-5.9.3.1/bin"},
+                     {"CC","cc"},
+                     {"CC_TEMPLATE",
+                      "cc -c -I/usr/lib64/erlang/lib/erl_interface-3.5.9/include -I/usr/lib64/erlang/erts-5.6.5/include -g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include  $PORT_IN_FILES -o $PORT_OUT_FILE"},
+                     {"CFLAGS",
+                      "-I/usr/lib64/erlang/lib/erl_interface-3.5.9/include -I/usr/lib64/erlang/erts-5.6.5/include"},
+                     {"COLORTERM","gnome-terminal"},
+                     {"CVS_RSH","ssh"},
+                     {"CXX","c++"},
+                     {"CXX_TEMPLATE",
+                      "c++ -c $CXXFLAGS -g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include  $PORT_IN_FILES -o $PORT_OUT_FILE"},
+                     {"DBUS_SESSION_BUS_ADDRESS",
+                      "unix:abstract=/tmp/dbus-0u7cW6VbFH,guid=a65491e0f8c8c224932ffc00519a7176"},
+                     {"DESKTOP_SESSION","default"},
+                     {"DESKTOP_STARTUP_ID",[]},
+                     {"DISPLAY",":0.0"},
+                     {"DRV_CFLAGS",
+                      "-g -Wall -fPIC  -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include "},
+                     {"DRV_LDFLAGS",
+                      "-shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei"},
+                     {"EMU","beam"},
+                     {"ERLANG_ARCH","64"},
+                     {"ERLANG_HOME","/usr/lib64/erlang"},
+                     {"ERLANG_LIB","/usr/lib64/erlang/lib"},
+                     {"ERLANG_TARGET","R15B03-x86_64-unknown-linux-gnu-64"},
+                     {"ERLANG_VER","erlangR15B03"},
+                     {"ERL_CFLAGS",
+                      " -I/usr/local/lib/erlang/lib/erl_interface-3.7.9/include -I/usr/local/lib/erlang/erts-5.9.3.1/include "},
+                     {"ERL_EI_LIBDIR",
+                      "/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib"},
+                     {"ERL_INTERFACE_DIR",
+                      "/usr/lib64/erlang/lib/erl_interface-3.5.9"},
+                     {"ERL_LDFLAGS",
+                      " -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei"},
+                     {"ERTS_HOME","/usr/lib64/erlang/erts-5.6.5"},
+                     {"ERTS_INCLUDE","/usr/lib64/erlang/erts-5.6.5/include"},
+                     {"ERTS_LIB","/usr/lib64/erlang/erts-5.6.5/lib"},
+                     {"GDMSESSION","default"},
+                     {"GDM_XSERVER_LOCATION","local"},
+                     {"GEM_HOME","/usr/local/rvm/gems/ruby-2.0.0-p0"},
+                     {"GEM_PATH",
+                      "/usr/local/rvm/gems/ruby-2.0.0-p0:/usr/local/rvm/gems/ruby-2.0.0-p0@global"},
+                     {"GNOME_DESKTOP_SESSION_ID","Default"},
+                     {"GNOME_KEYRING_SOCKET","/tmp/keyring-O4Wwqd/socket"},
+                     {"GTK_RC_FILES","/etc/gtk/gtkrc:/root/.gtkrc-1.2-gnome2"},
+                     {"G_BROKEN_FILENAMES","1"},
+                     {"HISTSIZE","1000"},
+                     {"HOME","/root"},
+                     {"HOSTNAME","talkserver"},
+                     {"IDEA_HOME","/opt/idea-IC-129.239"},
+                     {"INPUTRC","/etc/inputrc"},
+                     {"IRBRC","/usr/local/rvm/rubies/ruby-2.0.0-p0/.irbrc"},
+                     {"JAVA_HOME","/usr/java/jdk1.7.0_21"},
+                     {"JDK_HOME","/usr/java/jdk1.7.0_21/lib"},
+                     {"LANG","en_US.UTF-8"},
+                     {"LDFLAGS",
+                      "-L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei"},
+                     {"LESSOPEN","|/usr/bin/lesspipe.sh %s"},
+                     {"LINK_TEMPLATE",
+                      "cc $PORT_IN_FILES -L/usr/lib64/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei -shared  -L/usr/local/lib/erlang/lib/erl_interface-3.7.9/lib -lerl_interface -lei -o $PORT_OUT_FILE"},
+                     {"LOGNAME","root"},
+                     {"LS_COLORS",
+                      "no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:"},
+                     {"MAIL","/var/spool/mail/root"},
+                     {"MY_RUBY_HOME","/usr/local/rvm/rubies/ruby-2.0.0-p0"},
+                     {"PATH",
+                      "/usr/local/lib/erlang/erts-5.9.3.1/bin:/usr/local/lib/erlang/bin:/usr/local/rvm/gems/ruby-2.0.0-p0/bin:/usr/local/rvm/gems/ruby-2.0.0-p0@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p0/bin:/usr/local/rvm/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/opt/erlangR15B03/lib/erlang/bin:/opt/idea-IC-129.239/bin:/usr/java/jdk1.7.0_21/bin:/root/bin:/opt/erlangR15B03/lib/erlang/bin:/opt/idea-IC-129.239/bin:/usr/java/jdk1.7.0_21/bin"},
+                     {"PROGNAME","erl"},
+                     {"PWD","/opt/erlang_syslog/erlang-syslog"},
+                     {"QTDIR","/usr/lib64/qt-3.3"},
+                     {"QTINC","/usr/lib64/qt-3.3/include"},
+                     {"QTLIB","/usr/lib64/qt-3.3/lib"},
+                     {"ROOTDIR","/usr/local/lib/erlang"},
+                     {"RUBY_VERSION","ruby-2.0.0-p0"},
+                     {"SESSION_MANAGER",
+                      "local/talkserver:/tmp/.ICE-unix/2875"},
+                     {"SHELL","/bin/bash"},
+                     {"SHLVL","2"},
+                     {"SSH_AGENT_PID","2955"},
+                     {"SSH_ASKPASS","/usr/libexec/openssh/gnome-ssh-askpass"},
+                     {"SSH_AUTH_SOCK","/tmp/ssh-yBgAYu2875/agent.2875"},
+                     {"TERM","xterm"},
+                     {"USER","root"},
+                     {"WINDOWID","29699106"},
+                     {"XAUTHORITY","/tmp/.gdm6WDBXW"},
+                     {"XMODIFIERS","@im=none"},
+                     {"__array_start","0"},
+                     {"_first","0"},
+                     {"_second","1"},
+                     {"escape_flag","1"},
+                     {"rvm_bin_path","/usr/local/rvm/bin"},
+                     {"rvm_debug_clr","\e[35m"},
+                     {"rvm_error_clr","\e[31m"},
+                     {"rvm_notify_clr","\e[32m"},
+                     {"rvm_path","/usr/local/rvm"},
+                     {"rvm_prefix","/usr/local"},
+                     {"rvm_reset_clr","\e(B\e[m"},
+                     {"rvm_version","1.19.6 (stable)"},
+                     {"rvm_warn_clr","\e[33m"}]}]
+INFO:  No app_vars_file defined.
+DEBUG: vcs_vsn: Unknown VCS atom in vsn field: "1.0.1"
+WARN:  'post_compile' command does not apply to directory /opt/erlang_syslog/erlang-syslog
+DEBUG: Postdirs: []
